@@ -1,0 +1,372 @@
+extends ../_template
+
+block variables
+  - var title = 'Ремонт сколов, трещин, царапин стекол авто в Воронеже'
+
+block content
+  .preloader
+    .preloader__container
+      .preloader__container__block
+        .preloader__container__block__animation
+        .preloader__container__block__percents.js_percents 0%
+  .wrapper
+    .content
+      header.header
+        .header__top
+          .container
+            .header-top
+              .top-left
+                a(href='/').logo
+                  img(src='assets/img/logo.png' alt='logo').logo-img
+                .regim
+                  .regim__icon
+                    svg.isvg.color(width='33' height='33')
+                      svg(viewbox='0 0 64 64' xmlns='http://www.w3.org/2000/svg')
+                        path(fill='currentColor' d='M32 0c-17.645 0-32 14.355-32 32s14.355 32 32 32c2.898 0 5.77-0.387 8.809-1.25 6.156-2.723 9.516-9.441 8.027-15.996l0.063-0.063c0.938-0.934 1.359-2.734 0.941-3.992l-0.18-0.547c-0.422-1.258-1.813-2.57-3.094-2.922l-4.73-1.293c-1.281-0.348-3.109 0.121-4.051 1.063l-1.711 1.711c-6.219-1.684-11.098-6.563-12.777-12.781l1.711-1.711c0.938-0.938 1.406-2.766 1.059-4.051l-1.289-4.73c-0.348-1.281-1.668-2.672-2.926-3.094l-0.539-0.18c-1.262-0.422-3.063 0.004-4 0.945l-2.563 2.563c-0.457 0.453-0.75 1.754-0.75 1.758-0.086 8.133 3.102 15.965 8.852 21.719 5.734 5.734 13.539 8.918 21.645 8.848 0.020 0 0.316-0.066 0.668-0.172 0.023 3.934-2.207 7.609-5.695 9.168-2.418 0.668-4.93 1.008-7.469 1.008-15.438 0-28-12.563-28-28s12.563-28 28-28 28 12.563 28 28c0 4.602-1.094 9.004-3.254 13.078-0.516 0.977-0.141 2.188 0.832 2.703 0.98 0.523 2.188 0.145 2.703-0.828 2.434-4.594 3.719-9.766 3.719-14.953 0-17.645-14.355-32-32-32z')
+                  .regim__info
+                    a(href='tel:89304230885' onclick="yaCounter51291061.reachGoal('button7')").info-tel 8 (930) 423-08-85
+                    .info-grafik.color Пн - Сб с 08:00 до 20:00
+              .top-right
+                .mobile-menu 
+                  .bar
+                  .bar
+                  .bar
+                nav.menu-top
+                  ul.nav-list
+                    li.nav-list__item
+                      a(href='#uslugi').nav-link.scroll-js Услуги
+                    li.nav-list__item
+                      a(href='#favorites').nav-link.scroll-js Преимущества
+                    li.nav-list__item
+                      a(href='#portfolio').nav-link.scroll-js Примеры
+                    li.nav-list__item
+                      a(href='#contacts').nav-link.scroll-js Контакты
+        .header__bottom
+          .container
+            .header-bottom
+              h1.h1 Профессиональный ремонт стекол авто в воронеже
+              .descr Устраняем сколы, трещины и царапины на стеклах вашего автомобиля без его замены. Работа займет совсем не много времени и определенно обойдется дешевле.
+              .cena-ot цена ремонта от 500 р
+              a(href='#window_forma' onclick="yaCounter51291061.reachGoal('button')").btn.btn_callback.btn-js Записаться
+              .scroll
+                a(href='#uslugi').mouse.scroll-js
+      section#uslugi.section.section_uslugs
+        .container
+          .uslugs
+            .section-top
+              h2.section-name Услуги
+              .section-ui
+                a(href='#').squad
+                  .squad__el
+                  .squad__el
+                  .squad__el
+                  .squad__el
+                a(href='#').list
+                  .list__el
+                  .list__el
+                  .list__el
+            .uslugs-list
+              .uslugs-item
+                .usluga
+                  .usluga__photo
+                    .usluga-photo
+                      img(src='assets/img/skol.png' alt='ремонт сколов').usluga-img
+                  .usluga__info
+                    .info
+                      h3.usluga__name Ремонт сколов
+                      .usluga__descr
+                        p Наличие круглых сколов на лобовом стекле («Бычий глаз»). При их ремонте мы гарантируем качественное удаление воздушных включений из скола, что обеспечивается высоким качеством ремонта.
+                    
+                        p Ремонт «звездочек», или лучевидных трещин. В этом случае, при использовании сверления, гарантируется сохранность внутренней структуры стекла и качественная заливка полимера.
+                        p Восстановление комбинированных повреждений лобовых стекол
+                    .usluga__rec
+                      .rec
+                        .rec__price
+                          .price.color от 500 руб. / см кв.
+                        .rec__btn
+                          a(href='#window_forma' onclick="yaCounter51291061.reachGoal('button1')" data-track='Ремонт сколов').btn.btn_rec.btn-js Записаться
+              .uslugs-item#tresk
+                .usluga
+                  .usluga__photo
+                    .usluga-photo
+                      img(src='assets/img/tresk.png' alt='остановка и заливка трещин').usluga-img
+                  .usluga__info
+                    .info
+                      h3.usluga__name Остановка и заливка трещин
+                      .usluga__descr
+                        p Остановка трещины и дальнейшая ее заливка полимером может не только сохранить ваше оригинальное стекло но и сэкономить немало денег, также возможно как альтернатива чтобы поставить машину на учет без замены лобового стекла, т.к. былую трещину практически не видно.
+                        p Если 100% восстановление невозможно, мы предложим вам остановить распространение трещины, что позволит уберечь стекло от дальнейшего разрушения
+                    .usluga__rec
+                      .rec
+                        .rec__price
+                          .price.color от 500руб + 50 руб. / см.
+                        .rec__btn
+                          a(href='#window_forma' onclick="yaCounter51291061.reachGoal('button2')" data-track='Заливка и остановка трещин').btn.btn_rec.btn-js Записаться
+              .uslugs-item#polirovka
+                .usluga
+                  .usluga__photo
+                    .usluga-photo
+                      img(src='assets/img/polishing.png' alt='полировка стекла').usluga-img
+                  .usluga__info
+                    .info
+                      h3.usluga__name Полировка стекла
+                      .usluga__descr
+                        p Очень часто автомобильные стекла затираются дворниками и из-за чего теряяется прозрачность стекла и товарный вид автомобиля. Менять стекло - дорого, менять стекло китайского и отечественного производителя - можно , стекло будет не оригинальным и соответственно автомобиль сразу же падает в цене. Выход есть - полировка стекла с применением современных техноологий и дальнейшей обработкой защитным составом для наилучшей защиты от дальнейшего царапания стекла.
+                    .usluga__rec
+                      .rec
+                        .rec__price
+                          .price.color от 4 000 руб. / стекло
+                        .rec__btn
+                          a(href='#window_forma' onclick="yaCounter51291061.reachGoal('button3')" data-track='Полировка стекла').btn.btn_rec.btn-js Записаться
+              .uslugs-item
+                .usluga
+                  .usluga__photo
+                    .usluga-photo
+                      img(src='assets/img/nano.png'  alt='нано покрытия для стекол').usluga-img
+                  .usluga__info
+                    .info
+                      h3.usluga__name Нанесение защитного и гидрофобного покрытия
+                      .usluga__descr
+                       p Предлагаем вам защитные и гидрофобные составы от компании KRYTEX. Зачем? - все просто, при использовании покрытий обеспечивается более быстрое стекание воды с поверхности стекол, вы практически не будете пользоваться дворниками, стекла меньше загрязняются, благодаря образовавшейся защитной пленке стекла меньше царапаются, меньше  износ щеток стеклоочистителей, зимой меньше образуется наледи.
+                    .usluga__rec
+                      .rec
+                        .rec__price
+                          .price.color от 800 руб. / стекло
+                        .rec__btn
+                          a(href='#window_forma' onclick="yaCounter51291061.reachGoal('button4')" data-track='Нанесение защитного и гидрофобного покрытия').btn.btn_rec.btn-js Записаться
+      section#favorites.section.section-favorites
+        .container
+          .favorites
+            .section-top
+              h2.section-name.favorites-name Преимущества работы с нами
+            .favorites-list
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon1.png' alt='full spektr').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Полный спектр услуг по ремонту стекол авто
+                      .favorite-descr Оказываем полный спектр услуг по ремонту стекол автомобиля. Полировка после потертостей от дворников, ремонт сколов,остановка и заливка трещин полимером, нанесение защитных и гидрофобных составов, бронирование.
+
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon5.png' alt='guarantie').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Ремонт сколов и трещин с гарантией
+                      .favorite-descr Практически полное устранение следов сколов. В зависимости от сложности повреждения, возможно визуальное восстановление дефекта в среднем на 70-95%. Гарантированно точный подбор полимера для заливки повреждения и максимально полное соблюдение технологии ремонта с учетом особенностей строения лобового стекла.
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon3.png' alt='professional').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Профессиональное оборудование
+                      .favorite-descr Мы рекомендуем вам обращаться к нам сразу же после появления первых признаков повреждения лобового стекла. Высококачественный ремонт лобового стекла в Москве, проводится опытными мастерами с использованием высокоточного современного оборудования и полимеров Delta Kits
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon7.png' alt='chestno').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Честные цены
+                      .favorite-descr Наш сервис по ремонту сколов и трещин, гарантированно убережет Вас от дополнительных затрат на обслуживание автомобиля. Средняя стоимость ремонта составит от 800 до 1500 рублей в Воронеже, цена на ремонт лобового стекла зависит от степени повреждения, а это всегда будет гораздо дешевле чем его замена.
+              
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon4.png' alt='learning').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Обучение
+                      .favorite-descr Специалисты компании "Автоспа" также готовы провести Обучение ремонту сколов и трещин на лобовом стекле. Те, кто планирует начать бизнес в данной сфере, получат здесь реальный опыт и твердые знания от сертифицированных специалистов, имеющих немалый опыт в проведении различных видов ремонта.
+              
+              .favorites-item
+                .favorite
+                  .favorite__icon
+                    .favorite-icon
+                      img(src='assets/img/icon8.png' alt='sroki').favorite-img
+                  .favorite__info
+                    .info
+                      .favorite-name Всегда точно в срок
+                      .favorite-descr Оперативность выполнения работ (в день обращения). В зависимости от серьезности повреждения лобового стекла на все уходит, в среднем, в районе 40 минут.
+              
+      .section.section-marki
+        .container
+          .marki
+            .marki__name Мы используем материалы и оборудование ведущих производителей
+            .marki__list
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/3m.png' alt='3m').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/rupes.png' alt='rupes').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/festool.png' alt='festool').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/glassg.png' alt='glassgloss').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/koch.png' alt='kochchemie').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/flex.png' alt='flex').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/mirka.png' alt='mirka').marka-img
+              
+              .marki-item
+                .marka
+                  .marka-photo
+                    img(src='assets/img/krytex.png' alt='krytex').marka-img
+              
+                
+      section#portfolio.section.section-portfolio
+        .container
+          .portfolio
+            .section-top
+              H2.section-name.portfolio-name Наши работы
+            .portfolio__list
+              .portfolio-item
+                a.container-photo.twentytwenty-container.progressive.replace
+                  img(src='assets/img/q1.jpg' alt='скол лобового стекла').preview
+                  img(src='assets/img/q2.jpg' alt='Ремонт скола лобового стекла').preview
+              
+              .portfolio-item
+                .container-photo.twentytwenty-container.progressive.replace
+                  img(src='assets/img/q3.jpg' alt='Скол бычий глаз лобового стекла').preview
+                  img(src='assets/img/q4.jpg' alt='Ремонт скола бычий глаз лобового стекла').preview
+                  
+              .portfolio-item
+                .container-photo.twentytwenty-container.progressive.replace
+                  img(src='assets/img/q5.jpg' alt='Трещина лобового стекла').preview
+                  img(src='assets/img/q6.jpg' alt='Ремонт трещины лобового стекла').preview
+              
+              .portfolio-item
+                .container-photo.twentytwenty-container.progressive.replace
+                  img(src='assets/img/q7.jpg' alt='Скол лобового стекла').preview
+                  img(src='assets/img/q8.jpg' alt='Ремонт скола лобового стекла').preview
+              
+              .portfolio-item
+                .container-photo.twentytwenty-container.progressive.replace
+                  img(src='assets/img/q9.jpg' alt='Скол лобового стекла').preview
+                  img(src='assets/img/q10.jpg' alt='Ремонт скола лобового стекла').preview
+              
+            .triger
+              .triger__item.triger__item_text 
+                | Для уточнения стоимости работ просим Вас звонить по указанным телефонам или закажите обратный звонок
+              a(href='tel:89304230885').triger__item.triger__item_phone 8(930) 423-08-85
+              .triger__item.triger__item_btn
+                a(href="#window_forma" onclick="yaCounter51291061.reachGoal('button5')" data-track='Есть вопросы, перезвонить').btn.btn_callback.btn-js Перезвонить мне
+      section#contacts.section.section-contacts
+        .contacts(itemscope itemtype="http://schema.org/Organization")
+          .contacts-left
+            H2.section-name.contacts-name Контакты
+            .contacts-list
+              .contacts__item.contacts__item_adress(itemprop="name") Автоспа 
+              .contacts__item.contacts__item_adress(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress") Адрес: 
+                span.adress(itemprop="addressLocality") г.Воронеж, п. Ямное,
+                span.adress(itemprop="streetAddress") ул. строителей 8,
+                span.adress() поворот напротив Сити Парка «Град»
+              a(href='tel:89304230885' itemprop="telephone" onclick="yaCounter51291061.reachGoal('button8')").contacts__item.contacts__item_phone Телефон: 
+                span.phone 8(930) 423-08-85
+              .contacts__item.contacts__item_phone e-mail: 
+                span.email(itemprop="email") alltuningat@ya.ru
+            .welcome
+              .welcome__head Заезжайте к нам
+              .welcome__text Чтобы выпить чашечку кофе 
+                br/ и лично убедиться в качестве нашей работы
+          .contacts-right
+            .contacts-map
+              script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1cc8513407055563b8419de808c39aafddf705693bb16dc910e1ba0f07a8d4d6&width=100%25&height=360&lang=ru_RU&scroll=true')
+          
+    .cocie-window
+      .cocie
+        .cocie__text
+          | Этот сайт использует файлы cookie для улучшения взаимодействия с пользователем, продолжая использовать сайт вы даете свое согласие на работу с этими файлами.
+        .cocie__btn Ок
+    footer.footer
+      .container
+        | "Авто спа" | 2011 - 2018 © | 
+        br 
+        | Ремонт и полировка автомобильных стекол в Воронеже.
+        br 
+        | Ресурс носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гк РФ. 
+        | Все права защищены
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-130998747-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+    // Yandex.Metrika counter
+    script(type='text/javascript').
+      (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+      try {
+      w.yaCounter51291061 = new Ya.Metrika2({
+      id:51291061,
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+      });
+      } catch(e) { }
+      });
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+      if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/51291061', style='position:absolute; left:-9999px;', alt='')
+      // /Yandex.Metrika counter
+
+      
+    .window-popup#window_forma
+      form.forma(action="mail.php" method="POST")
+        .forma__name Форма заявки
+        label.leed__name 
+          input(type='text' name='name' autocomplete='on' autofocus  placeholder='Введите ваше имя' required).input.input_name
+        label.leed__phone 
+          input(type='tel' name='phone'  autocomplete='on' placeholder='Введите ваш телефон' required).input.input_phone
+        .forma__bottom
+          input.input_track(type="hidden" name='track' value='')
+          input.btn.btn_submit(type='submit' value='Отправить') 
+          label.konfident
+            input.input_konfident(type="checkbox" required)
+            span Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь c 
+              a(href='assets/userfiles/politika-conf.pdf' onclick="yaCounter51291061.reachGoal('button6')" target='_blank') политикой конфиденциальности
+    .up
+      .up__item
+    

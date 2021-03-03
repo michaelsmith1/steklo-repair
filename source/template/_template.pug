@@ -1,0 +1,46 @@
+include mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(http-equiv='content-type' content="text/html; charset=utf-8")
+    title #{title}
+    meta(content="" name="author")
+    meta(name = "msapplication-TileColor" content = "#0E2B5E")  
+    meta(content="Ремонт стекол автомобиля от сколов, трещин и царапин в Воронеже" name="description")
+    meta(content="Ремонт лобового стекла, остановка трещины на стекле, ремонт скола на лобовом стекле, полировка стекла" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    meta(name="yandex-verification" content="258ce5b074a1bfa0")
+    base(href='/')
+    link(rel='apple-touch-icon-precomposed' href='assets/img/favicon.png')
+    link(rel='shortcut icon', href='assets/img/favicon.png')
+    link(href='https://fonts.googleapis.com/css?family=Oswald:400,500,600%7CRoboto+Condensed:400,700&subset=cyrillic' rel='stylesheet')
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/userfiles/sweet-alert/sweet-alert.css')
+    link(rel='stylesheet' href='/assets/userfiles/fancybox/css/jquery.fancybox.css')
+    link(rel='stylesheet' href='/assets/userfiles/slick/slick.css')
+    //- link(rel='stylesheet' href='/assets/userfiles/progr-image/css/progressive-image.min.css')
+    link(rel='stylesheet' href='/assets/css/setup.css')
+    link(rel='stylesheet' href='/assets/css/main.css')
+    
+
+
+    <!--[if lt IE 9]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body
+    block content
+    script(src='/assets/js/foundation.js' defer)
+    //- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+    //- script(src='https://code.createjs.com/easeljs-0.7.1.min.js' defer)
+    //- script(src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js' defer)
+    script(src='/assets/userfiles/scroll/SmoothScroll.js' defer)
+    script(src='/assets/userfiles/sweet-alert/sweet-alert.min.js' defer)
+    script(src='/assets/userfiles/fancybox/js/jquery.fancybox.pack.js' defer)
+    script(src='/assets/userfiles/mask/jquery.maskedinput-1.2.2.js' defer)
+    script(src='/assets/userfiles/slick/slick.min.js' defer)
+    //- script(src='/assets/userfiles/progr-image/js/progressive-image.min.js' defer)
+    script(src='/assets/js/app.js' defer)
